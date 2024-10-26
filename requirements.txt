@@ -1,0 +1,8 @@
+IPython.display
+pandas
+os
+sys
+csv
+seaborn
+matplotlib.pyplot
+pytest

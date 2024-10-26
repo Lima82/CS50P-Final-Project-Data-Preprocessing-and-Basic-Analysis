@@ -1,0 +1,165 @@
+Our raw data for demo:
+                                 Column1              Column2
+0                  DONATELLO (1386-1466)    EARLY RENAISSANCE
+1      Leon Battista Alberti (1404-1472)    EARLY RENAISSANCE
+2        fra filippo lippi (c.1406-1469)    EARLY RENAISSANCE
+3             Albrecht Durer (1471-1528)                  NaN
+4      Alessandro BOTTICELLi (1445-1510)    EARLY RENAISSANCE
+5          Leonardo da Vinci (1452-1519)     HIGH RENAISSANCE
+6     Filippino        Lippi (1457-1504)     HIGH RENAISSANCE
+7                   Titian (c.1485-1576)     HIGH RENAISSANCE
+8                   Titian (c.1485-1576)     HIGH RENAISSANCE
+9                   Raphael  (1483-1520)     HIGH RENAISSANCE
+
+Our raw data with splited columns for demo:
+                         Name   Birth Death             Movement
+0                  DONATELLO     1386  1466    EARLY RENAISSANCE
+1      Leon Battista Alberti     1404  1472    EARLY RENAISSANCE
+2          fra filippo lippi   c.1406  1469    EARLY RENAISSANCE
+3             Albrecht Durer     1471  1528                  NaN
+4      Alessandro BOTTICELLi     1445  1510    EARLY RENAISSANCE
+5          Leonardo da Vinci     1452  1519     HIGH RENAISSANCE
+6     Filippino        Lippi     1457  1504     HIGH RENAISSANCE
+7                     Titian   c.1485  1576     HIGH RENAISSANCE
+8                     Titian   c.1485  1576     HIGH RENAISSANCE
+9                   Raphael      1483  1520     HIGH RENAISSANCE
+
+Missing values:
+Name        0
+Birth       0
+Death       0
+Movement    2
+dtype: int64
+
+We have 3 explisit duplicates!
+
+Explicit duplicates are:
+                  Name   Birth Death          Movement
+4   Leonardo da Vinci     1452  1519  HIGH RENAISSANCE
+6              Titian   c.1485  1576  HIGH RENAISSANCE
+7              Titian   c.1485  1576  HIGH RENAISSANCE
+8            Raphael      1483  1520  HIGH RENAISSANCE
+9            Raphael      1483  1520  HIGH RENAISSANCE
+15  Leonardo da Vinci     1452  1519  HIGH RENAISSANCE
+
+Our cleaned data for demo:
+                    Name  Birth  Death           Movement
+0              Donatello   1386   1466  Early Renaissance
+1  Leon Battista Alberti   1404   1472  Early Renaissance
+2      Fra Filippo Lippi   1406   1469  Early Renaissance
+3  Alessandro Botticelli   1445   1510  Early Renaissance
+4      Leonardo Da Vinci   1452   1519   High Renaissance
+5        Filippino Lippi   1457   1504   High Renaissance
+6                 Titian   1485   1576   High Renaissance
+7                Raphael   1483   1520   High Renaissance
+8       Andrea Del Sarto   1486   1530   High Renaissance
+9       Giovanni Bellini   1430   1516   High Renaissance
+
+DataFrame information:
+
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 100 entries, 0 to 99
+Data columns (total 5 columns):
+ #   Column    Non-Null Count  Dtype 
+---  ------    --------------  ----- 
+ 0   Name      100 non-null    object
+ 1   Birth     100 non-null    int64 
+ 2   Death     100 non-null    int64 
+ 3   Age       100 non-null    int64 
+ 4   Movement  100 non-null    object
+dtypes: int64(3), object(2)
+memory usage: 4.0+ KB
+None
+
+Statistical data summary:
+             Birth        Death         Age
+count   100.000000   100.000000  100.000000
+mean   1750.160000  1814.510000   64.350000
+std     136.455174   137.073415   15.137334
+min    1386.000000  1441.000000   26.000000
+25%    1737.000000  1805.000000   55.500000
+50%    1801.500000  1864.000000   66.500000
+75%    1839.250000  1904.250000   74.000000
+max    1868.000000  1942.000000   96.000000
+
+Count Artists by Movement:
+               Movement  Movement_count
+0   Figurative Painting              32
+1    Landscape Painting              17
+2      High Renaissance              10
+3         Impressionism               8
+4               Realism               8
+5           Romanticism               7
+6    Post-Impressionism               6
+7     Early Renaissance               4
+8           Art Nouveau               3
+9     Neo-Impressionism               3
+10      Ukiyo-E Artists               2
+
+Count Artists by Age:
+    Age  Age_count
+0    68          5
+1    61          5
+2    82          4
+3    72          4
+4    67          4
+5    74          4
+6    54          3
+7    60          3
+8    51          3
+9    73          3
+10   65          3
+11   66          3
+12   86          3
+13   37          3
+14   69          3
+15   70          3
+16   64          2
+17   58          2
+18   76          2
+19   63          2
+20   77          2
+21   56          2
+22   52          2
+23   80          2
+24   47          2
+25   83          2
+26   71          2
+27   78          1
+28   84          1
+29   87          1
+30   89          1
+31   90          1
+32   91          1
+33   26          1
+34   27          1
+35   62          1
+36   59          1
+37   57          1
+38   53          1
+39   49          1
+40   48          1
+41   46          1
+42   44          1
+43   43          1
+44   40          1
+45   33          1
+46   32          1
+47   29          1
+48   96          1
+
+First 10 rows of our final dataset for demo:
+                    Name  Birth  Death  Age             Movement
+0       Albert Bierstadt   1830   1902   72   Landscape Painting
+1   Albert Pinkham Ryder   1847   1917   70   Landscape Painting
+2         Albrecht Durer   1471   1528   57     High Renaissance
+3  Alessandro Botticelli   1445   1510   65    Early Renaissance
+4          Alfred Sisley   1839   1899   60        Impressionism
+5         Alfred Stevens   1817   1875   58  Figurative Painting
+6           Allan Ramsay   1713   1784   71  Figurative Painting
+7       Andrea Del Sarto   1486   1530   44     High Renaissance
+8      Antoine-Jean Gros   1771   1835   64          Romanticism
+9           Antoni Gaudi   1852   1926   74          Art Nouveau
+
+The End! Thank you for your time!
+Best regards, Marina Orlenko

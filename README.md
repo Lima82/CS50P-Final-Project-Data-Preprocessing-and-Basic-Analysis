@@ -1,7 +1,5 @@
 # CS50P Final Project: Data Preprocessing and Basic Analysis
 ### Video Demo:  https://youtu.be/C7LvGN34AjU
-### Me50:  https://github.com/me50/Lima82/tree/6884758df863054c6b2194c0cd2dc06e7400c71f
-### Certificate:  https://courses.edx.org/certificates/c34e2703fd0a4bfb90e58a7ac05f71ea
 ### Description:
 In my role as a data analyst, I often deal with raw, unprocessed data. That is why I created this program which I would like to share with everyone. It can be adapted to any data frame with raw data. The main goal of my program is to prepare data for further analysis, and I've also included a small analytical component for demonstration purposes.
 
